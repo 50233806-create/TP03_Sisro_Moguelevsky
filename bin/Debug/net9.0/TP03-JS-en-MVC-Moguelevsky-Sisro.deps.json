@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "TP03-JS-en-MVC-Moguelevsky-Sisro/1.0.0": {
+        "runtime": {
+          "TP03-JS-en-MVC-Moguelevsky-Sisro.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TP03-JS-en-MVC-Moguelevsky-Sisro/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
