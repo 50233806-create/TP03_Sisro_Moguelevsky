@@ -8,16 +8,16 @@ namespace TP03_JS_en_MVC_Moguelevsky_Sisro.Models;
         {
             palabras = new List<string>()
             {
-                "PARQUE";
-                "VIAJES";
-                "TRICICLO";
-                "ELEFANTE";
+                "ALLOSAURUS";
+                "QUETZALCOATLUS";
+                "CYMBOSPONDYLUS";
+                "PLATYBELODON";
                 "CRETOXYRHINA";
-                "CABALLOS";
-                "DERPORTES";
-                "ESCUELA";
-                "HABITACIONES";
-                "CATABASIS";
+                "MACHRAUCHENIA";
+                "TORVOSAURUS";
+                "DUNKLEOSTEUS";
+                "STEGOSAURUS";
+                "STYXOSAURUS";
             }
         }
         public PalabrasAhorcado()
