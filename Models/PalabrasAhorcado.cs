@@ -17,7 +17,7 @@ namespace TP03_JS_en_MVC_Moguelevsky_Sisro.Models;
                 "TORVOSAURUS";
                 "DUNKLEOSTEUS";
                 "STEGOSAURUS";
-                "STYXOSAURUS";
+                "STYXOSAURUS"
             }
         }
         public PalabrasAhorcado()
