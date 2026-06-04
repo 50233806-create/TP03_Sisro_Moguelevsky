@@ -1,10 +1,10 @@
 let intentos = 10;
-function Ahorcado()
+function ArriesgarLetra()
 {
     let input = document.getElementById("letra");
     let letra = input.value.toUpperCase();
     let palabra = document.getElementById("palabraReal").value;
-    let palabraOculta =document.getElementById("palabraOculta").innerHTML;
+    let palabraOculta = document.getElementById("palabraOculta").innerHTML;
     let nuevaPalabra = "";
     let acerto = false;
     if(letra == "" || letra.length>1)
