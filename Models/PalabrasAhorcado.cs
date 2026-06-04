@@ -8,16 +8,16 @@ namespace TP03_JS_en_MVC_Moguelevsky_Sisro.Models;
         {
             palabras = new List<string>()
             {
-                "ALLOSAURUS";
-                "QUETZALCOATLUS";
-                "CYMBOSPONDYLUS";
-                "PLATYBELODON";
-                "CRETOXYRHINA";
-                "MACHRAUCHENIA";
-                "TORVOSAURUS";
-                "DUNKLEOSTEUS";
-                "STEGOSAURUS";
-                "STYXOSAURUS";
+                "ALIEN";
+                "INCEPTION";
+                "SHREK";
+                "AMADEUS";
+                "JAWS";
+                "HEAT";
+                "MATILDA";
+                "DUNKIRK";
+                "ERASERHEAD";
+                "PSYCHO";
             }
         }
         public PalabrasAhorcado()
@@ -33,3 +33,4 @@ namespace TP03_JS_en_MVC_Moguelevsky_Sisro.Models;
         }
     }
 }
+
