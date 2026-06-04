@@ -16,14 +16,15 @@
     </header>   
     <section>
         <div>
+        <p id="msj"></p>
             @for (int i = 0; i < @ViewBag.Palabra.length; i++)
             {
                 <p>_</p>
             }
         </div>
-        <p>Intentos restantes: @</p>
+        <p id="intentos">Intentos restantes: @</p>
         <div>
-        <p>Estado: @</p>    
+        <p id="mensaje">Estado: @</p>    
         </div>
         <input type="text" name ="letra" placeholder="Ingresar Letra" id="letra">
         <input type="hidden" name="palabraOculta" placeholder="Ingresar Palabra" id="palabraOculta">
@@ -32,3 +33,4 @@
         </button>
     </section>
 </body>
+    
