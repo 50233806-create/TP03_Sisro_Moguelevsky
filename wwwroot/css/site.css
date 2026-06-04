@@ -1,31 +1,38 @@
-html {
-  font-size: 14px;
+body
+{
+  background-color: #ff8c34;
 }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+header
+{
+  background-color: #7e583b;
+  border-bottom: 15px solid #eca26a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 1000;
 }
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+section
+{
+  border-top: 15px solid #eca26a;
+  background-color: #5c493a;
+  padding: 20px;
+  border-radius: 25px;
+  display: inline-block;
 }
-
-html {
-  position: relative;
-  min-height: 100%;
+button
+{
+  width: auto;
+  background-color: #eca26a;
+  border-radius: 25px;
+  padding: 20px;
+  border: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
-
-body {
-  margin-bottom: 60px;
-}
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
-}
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+button:hover
+{
+    background-color: #c58859;
+    box-shadow: 0.1em 0.6em 0.7em #ff8c34;
+    transform: translateY(-10px);
 }
