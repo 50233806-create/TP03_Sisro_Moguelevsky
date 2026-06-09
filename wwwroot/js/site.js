@@ -3,7 +3,7 @@ function ArriesgarLetra()
 {
     let input = document.getElementById("letra");
     let letra = input.value.toUpperCase();
-    let palabra = document.getElementById("palabraReal").value;
+    let palabra = document.getElementById("palabraReal").innerHTML;
     let palabraOculta = document.getElementById("palabraOculta").innerHTML;
     let nuevaPalabra = "";
     let acerto = false;
@@ -20,7 +20,7 @@ function ArriesgarLetra()
             acerto = true;
             i++;
         }
-        else(!acerto)
+        else
         {
         intentos--;
         document.getElementById("intentos").innerHTML=intentos;
