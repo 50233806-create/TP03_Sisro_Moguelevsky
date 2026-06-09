@@ -28,7 +28,7 @@
         </div>
         <input type="text" name ="letra" placeholder="Ingresar Letra" id="letra">
         <input type="hidden" name="palabraOculta" placeholder="Ingresar Palabra" id="palabraOculta"> = string palabraAdivinada
-        if(palabraAdivinada == ViewBag.Palabra)
+        @if(palabraAdivinada == ViewBag.Palabra)
         {
             <p id="palabraReal"></p>    
         }
