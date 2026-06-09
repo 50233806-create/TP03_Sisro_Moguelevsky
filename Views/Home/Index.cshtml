@@ -27,7 +27,11 @@
         <p id="mensaje">Estado: </p>    
         </div>
         <input type="text" name ="letra" placeholder="Ingresar Letra" id="letra">
-        <input type="hidden" name="palabraOculta" placeholder="Ingresar Palabra" id="palabraOculta">
+        <input type="hidden" name="palabraOculta" placeholder="Ingresar Palabra" id="palabraOculta"> = string palabraAdivinada
+        if(palabraAdivinada == ViewBag.Palabra)
+        {
+            <p id="palabraReal"></p>    
+        }
         <button>
             <input type="submit" value="Arriesgar letra">
         </button>
