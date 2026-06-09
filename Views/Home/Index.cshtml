@@ -17,24 +17,21 @@
     <section>
         <div>
         <p id="msj"></p>
-            @for (int i = 0; i < @ViewBag.Palabra.length; i++)
-            {
-                <p>_</p>
-            }
+            <p id="palabraOculta">
+                @for (int i = 0; i < ViewBag.Palabra.Length; i++)
+                {
+                    @:_ 
+                }
+            </p>
         </div>
         <p id="intentos">Intentos restantes:</p>
         <div>
         <p id="mensaje">Estado: </p>    
         </div>
-        <input type="text" name ="letra" placeholder="Ingresar Letra" id="letra">
-        <input type="hidden" name="palabraOculta" value="palabraAdivinada" id="palabraOculta">
-        @if(palabraAdivinada == ViewBag.Palabra)
-        {
-            <p id="palabraReal">Palabra:</p>    
-        }
         <button>
-            <input type="submit" value="Arriesgar letra">
+        <input type="text" name ="letra" placeholder="Ingresar Letra" id="letra">
         </button>
+        <input type="button" value="Arriesgar letra" onclick="ArriesgarLetra()">
     </section>
+    <p id="palabraReal" hidden>@ViewBag.Palabra</p>
 </body>
-    
