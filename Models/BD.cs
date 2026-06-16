@@ -5,7 +5,6 @@ namespace TP03_Moguelevsky_Sisro.Models;
 public class BD
 {
     private string connectionString = @"Server=localhost; DataBase AhorcadoCinematico; Integrated Security=True; Trust Server Certificate=True;";
-
     public List<string> RecibirPalabras()
     {
         List<string> palabras = new List<string>();
