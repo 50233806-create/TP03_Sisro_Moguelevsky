@@ -1,6 +1,7 @@
-let intentos = 10;
+    let intentos = 10;
 function ArriesgarLetra()
 {
+
     let input = document.getElementById("letra");
     let letra = input.value.toUpperCase();
     let palabra = document.getElementById("palabraReal").innerHTML;
@@ -17,20 +18,17 @@ function ArriesgarLetra()
         if(palabra [i] == letra)
         {
             nuevaPalabra += letra + " ";
-            acerto = true;
+            document.getElementById("M").innerHTML ="Acertaste ";
+            document.getElementById("PalabraConLetraAdivinada").innerHTML= nuevaPalabra;       
             i++;
         }
         else
         {
-        intentos--;
+        intentos=inentos-1;
         document.getElementById("intentos").innerHTML=intentos;
         }
     }   
-    if(acerto==palabra.length)
-    {
-    document.getElementById("mensaje").innerHTML ="GANASTE";
-    }
-    if(intentos== 0)
+    if(intentos==0)
     {
     document.getElementById("mensaje").innerHTML ="PERDISTE";
     document.getElementById("palabraOculta").innerHTML = palabra;
