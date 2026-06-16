@@ -6,6 +6,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+
     <title>Ahorcado</title>
 </head>
 <body>
@@ -15,23 +16,27 @@
     </header>
     <section>
         <div>
+         <button>
+        <input type="text" name ="letra" placeholder="Ingresar Letra" id="letra">
+        </button>
+        <input type="button" value="Arriesgar letra" onclick="ArriesgarLetra()">
         <p id="msj"></p>
             <p id="palabraOculta">
                 @for (int i = 0; i < ViewBag.Palabra.Length; i++)
                 {
-                    @:_ 
+                    @:_
+                  
+                    
                 }
             </p>
+              <p id="M"></p> 
+        <p id="PalabraConLetraAdivinada"></p> 
         </div>
-        <p id="intentos">Intentos restantes:</p>
+        <p id="intentos">Intentos restantes = </p>
         <div>
         <p id="mensaje">Estado: </p>    
         </div>
-        <button>
-        <input type="text" name ="letra" placeholder="Ingresar Letra" id="letra">
-        </button>
-        <input type="button" value="Arriesgar letra" onclick="ArriesgarLetra()">
+       
     </section>
     <p id="palabraReal" hidden>@ViewBag.Palabra</p>
 </body>
-    
