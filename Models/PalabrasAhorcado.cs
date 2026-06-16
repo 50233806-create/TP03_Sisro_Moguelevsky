@@ -1,10 +1,10 @@
-namespace TP03_JS_en_MVC_Moguelevsky_Sisro.Models;
+namespace TP03_Moguelevsky_Sisro.Models;
 public class PalabrasAhorcado
     {
         private List<string> palabras;
         public PalabrasAhorcado()
         {
-            palabras = new List<string>()
+             palabras= new List<string>()
             {
                 "ALIEN",
                 "INCEPTION",
