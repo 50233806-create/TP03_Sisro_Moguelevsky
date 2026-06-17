@@ -1,11 +1,11 @@
 body
 {
-  background-color: #ff8c34;
+  background-color: #ffffff;
 }
 header
 {
-  background-color: #7e583b;
-  border-bottom: 15px solid #eca26a;
+  background-color: #000000;
+  border-bottom: 15px solid #ff0000;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,8 +15,8 @@ header
 section
 {
   margin-top: 10%;
-  border-top: 15px solid #eca26a;
-  background-color: #5c493a;
+  border-top: 15px solid #ff0000;
+  background-color: #000000;
   padding: 20px;
   border-radius: 25px;
   display: inline-block;
@@ -24,7 +24,7 @@ section
 button
 {
   width: auto;
-  background-color: #eca26a;
+  background-color: #ffffff;
   border-radius: 25px;
   padding: 20px;
   border: none;
@@ -33,11 +33,12 @@ button
 }
 button:hover
 {
-    background-color: #c58859;
-    box-shadow: 0.1em 0.6em 0.7em #ff8c34;
+    background-color: #d8d8d8;
+    box-shadow: 0.1em 0.6em 0.7em #ff0000;
     transform: translateY(-10px);
 }
 h1,p
 {
   color: #ffffff;
 }
+
