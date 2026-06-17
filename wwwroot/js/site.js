@@ -14,6 +14,11 @@ function ArriesgarLetra() {
     let palabra =
         document.getElementById("palabraReal").innerHTML.toUpperCase();
 
+    let palabraActual =
+        document.getElementById("PalabraConLetraAdivinada").innerHTML;
+
+    let letrasMostradas = palabraActual.trim().split(" ");
+
     let nuevaPalabra = "";
     let acerto = false;
 
@@ -22,19 +27,37 @@ function ArriesgarLetra() {
         if (palabra[i] === letra) {
             nuevaPalabra += letra + " ";
             acerto = true;
-        } else {
+        }
+        else if (letrasMostradas[i] && letrasMostradas[i] !== "_") {
+            nuevaPalabra += letrasMostradas[i] + " ";
+        }
+        else {
             nuevaPalabra += "_ ";
         }
     }
 
+    document.getElementById("PalabraConLetraAdivinada").innerHTML =
+        nuevaPalabra;
+
     if (acerto) {
         document.getElementById("M").innerHTML = "Acertaste";
-        document.getElementById("PalabraConLetraAdivinada").innerHTML =
-            nuevaPalabra;
     } else {
         intentos--;
         document.getElementById("intentos").innerHTML = intentos;
+        document.getElementById("M").innerHTML = "Fallaste";
     }
+
+    if (!nuevaPalabra.includes("_")) {
+        document.getElementById("mensaje").innerHTML = "GANASTE";
+    }
+
+    if (intentos === 0) {
+        document.getElementById("mensaje").innerHTML = "PERDISTE";
+        document.getElementById("palabraOculta").innerHTML = palabra;
+    }
+
+    input.value = "";
+}    }
 
     if (intentos === 0) {
         document.getElementById("mensaje").innerHTML = "PERDISTE";
