@@ -5,7 +5,7 @@ body
 header
 {
   background-color: #000000;
-  border-bottom: 15px solid #ff0000;
+  border-bottom: 15px solid #8d1212;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,11 +15,13 @@ header
 section
 {
   margin-top: 10%;
-  border-top: 15px solid #ff0000;
+  border-top: 15px solid #8d1212;
   background-color: #000000;
   padding: 20px;
   border-radius: 25px;
-  display: inline-block;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 button
 {
@@ -30,15 +32,27 @@ button
   border: none;
   margin-top: 1%;
   margin-bottom: 1%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+input
+{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 button:hover
 {
     background-color: #d8d8d8;
-    box-shadow: 0.1em 0.6em 0.7em #ff0000;
+    box-shadow: 0.1em 0.6em 0.7em #8d1212;
     transform: translateY(-10px);
 }
 h1,p
 {
   color: #ffffff;
 }
-
+header h1,p
+{
+  text-align: center;
+}
