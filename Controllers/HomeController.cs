@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TP03_JS_en_MVC_Moguelevsky_Sisro.Models;
+using TP03_Moguelevsky_Sisro.Models;
 
 namespace TP03_JS_en_MVC_Moguelevsky_Sisro.Controllers;
 
