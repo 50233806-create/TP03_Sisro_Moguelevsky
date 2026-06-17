@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>TP03_JS_en_MVC_Moguelevsky_Sisro</RootNamespace>
+    <RootNamespace>TP03_Moguelevsky_Sisro</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
