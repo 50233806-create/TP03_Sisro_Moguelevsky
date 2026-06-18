@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TP03_Moguelevsky_Sisro.Models;
+using TP03_JS_en_MVC_Moguelevsky_Sisro.Models;
 
 namespace TP03_JS_en_MVC_Moguelevsky_Sisro.Controllers;
 
@@ -15,8 +15,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-       PalabrasAhorcado juego = new PalabrasAhorcado();
-       ViewBag.Palabra = juego.ObtenerPalabra();
+        BD juego = new BD();
+        List<string> palabras = juego.RecibirPalabras();
+        Random rnd = new Random();
+        string palabra = palabras[rnd.Next(palabras.Count)];
+        ViewBag.Palabra = palabra;
         return View();
     }
 
