@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [AhorcadoCinematico]    Script Date: 11/6/2026 08:59:27 ******/
+/****** Object:  Database [AhorcadoCinematico]    Script Date: 18/6/2026 08:42:14 ******/
 CREATE DATABASE [AhorcadoCinematico]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -79,10 +79,10 @@ ALTER DATABASE [AhorcadoCinematico] SET QUERY_STORE = OFF
 GO
 USE [AhorcadoCinematico]
 GO
-/****** Object:  User [alumno]    Script Date: 11/6/2026 08:59:27 ******/
+/****** Object:  User [alumno]    Script Date: 18/6/2026 08:42:14 ******/
 CREATE USER [alumno] FOR LOGIN [alumno] WITH DEFAULT_SCHEMA=[dbo]
 GO
-/****** Object:  Table [dbo].[Palabras]    Script Date: 11/6/2026 08:59:27 ******/
+/****** Object:  Table [dbo].[Palabras]    Script Date: 18/6/2026 08:42:14 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -122,71 +122,31 @@ INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (21, N'NOSFERATU')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (22, N'TENET')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (24, N'POLTERGHEIST')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (25, N'GHOSTBUSTERS')
-SET IDENTITY_INSERT [dbo].[Palabras] OFF
-GO
-USE [master]
-GO
-ALTER DATABASE [AhorcadoCinematico] SET  READ_WRITE 
-GO
-GO
-ALTER DATABASE [AhorcadoCinematico] SET  MULTI_USER 
-GO
-ALTER DATABASE [AhorcadoCinematico] SET PAGE_VERIFY CHECKSUM  
-GO
-ALTER DATABASE [AhorcadoCinematico] SET DB_CHAINING OFF 
-GO
-ALTER DATABASE [AhorcadoCinematico] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
-GO
-ALTER DATABASE [AhorcadoCinematico] SET TARGET_RECOVERY_TIME = 60 SECONDS 
-GO
-ALTER DATABASE [AhorcadoCinematico] SET DELAYED_DURABILITY = DISABLED 
-GO
-EXEC sys.sp_db_vardecimal_storage_format N'AhorcadoCinematico', N'ON'
-GO
-ALTER DATABASE [AhorcadoCinematico] SET QUERY_STORE = OFF
-GO
-USE [AhorcadoCinematico]
-GO
-/****** Object:  User [alumno]    Script Date: 11/6/2026 08:59:27 ******/
-CREATE USER [alumno] FOR LOGIN [alumno] WITH DEFAULT_SCHEMA=[dbo]
-GO
-/****** Object:  Table [dbo].[Palabras]    Script Date: 11/6/2026 08:59:27 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[Palabras](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[palabra] [varchar](50) NOT NULL,
- CONSTRAINT [PK_Palabras] PRIMARY KEY CLUSTERED 
-(
-	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-SET IDENTITY_INSERT [dbo].[Palabras] ON 
-
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (1, N'ALIEN')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (2, N'INCEPTION')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (3, N'SHREK')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (4, N'AMADEUS')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (5, N'JAWS')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (6, N'HEAT')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (7, N'MATILDA')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (8, N'DUNKIRK')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (9, N'ERASERHEAD')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (10, N'PSYCHO')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (11, N'FRANKENSTEIN')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (12, N'DRACULA')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (13, N'TITANIC')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (14, N'MICHAEL')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (15, N'HALLOWEEN')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (16, N'AVATAR')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (17, N'WHIPLASH')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (18, N'SE7EN')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (19, N'MISERY')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (20, N'SINNERS')
-INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (21, N'NOSFERATU')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (26, N'ZOOLANDER')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (27, N'DUNE')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (28, N'FROZEN')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (29, N'MEMENTO')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (30, N'INTERSTELLAR')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (31, N'UP')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (32, N'BAMBI')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (33, N'GOODFELLAS')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (34, N'GLADIATOR')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (35, N'DRIVE')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (36, N'GRAVITY')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (37, N'ARRIVAL')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (38, N'MOANA')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (39, N'CASINO')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (40, N'MULAN')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (41, N'TWISTER')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (42, N'SCREAM')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (43, N'BRAVEHEART')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (44, N'PARASITE')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (45, N'HER')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (46, N'ZODIAC')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (47, N'SKYFALL')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (48, N'VERTIGO')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (49, N'CLOVERFIELD')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (50, N'SPLIT')
 SET IDENTITY_INSERT [dbo].[Palabras] OFF
 GO
 USE [master]
