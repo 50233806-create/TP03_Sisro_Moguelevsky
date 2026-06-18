@@ -57,12 +57,4 @@ function ArriesgarLetra() {
     }
 
     input.value = "";
-}    }
-
-    if (intentos === 0) {
-        document.getElementById("mensaje").innerHTML = "PERDISTE";
-        document.getElementById("palabraOculta").innerHTML = palabra;
-    }
-
-    input.value = "";
 }
