@@ -147,9 +147,13 @@ INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (47, N'SKYFALL')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (48, N'VERTIGO')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (49, N'CLOVERFIELD')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (50, N'SPLIT')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (51, N'PRIMETIME')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (52, N'OLD')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (53, N'MINIONS')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (54, N'KEEPER')
 SET IDENTITY_INSERT [dbo].[Palabras] OFF
 GO
 USE [master]
 GO
-ALTER DATABASE [AhorcadoCinematico] SET  READ_WRITE 
+ALTER DATABASE [AhorcadoCinematico] SET  READ_WRITE
 GO
