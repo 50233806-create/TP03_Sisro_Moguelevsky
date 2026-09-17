@@ -151,6 +151,13 @@ INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (51, N'PRIMETIME')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (52, N'OLD')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (53, N'MINIONS')
 INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (54, N'KEEPER')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (55, N'PRESSURE')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (56, N'NAPOLEON')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (57, N'ALIENS')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (58, N'PREY')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (59, N'ANORA')
+INSERT [dbo].[Palabras] ([id], [palabra]) VALUES (60, N'CASABLANCA')
+
 SET IDENTITY_INSERT [dbo].[Palabras] OFF
 GO
 USE [master]
