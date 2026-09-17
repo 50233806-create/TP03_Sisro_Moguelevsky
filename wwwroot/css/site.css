@@ -1,11 +1,11 @@
 body
 {
-  background-color: #ffffff;
+  background-color: #0D0D0D;
 }
 header
 {
-  background-color: #000000;
-  border-bottom: 15px solid #8d1212;
+  background-color: #262626;
+  border-bottom: 15px solid #ffd700;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,8 +15,8 @@ header
 section
 {
   margin-top: 10%;
-  border-top: 15px solid #8d1212;
-  background-color: #000000;
+  border-top: 15px solid #ffd700;
+  background-color: #262626;
   padding: 20px;
   border-radius: 25px;
   display: block;
@@ -45,14 +45,29 @@ input
 button:hover
 {
     background-color: #d8d8d8;
-    box-shadow: 0.1em 0.6em 0.7em #8d1212;
+    box-shadow: 0.1em 0.6em 0.7em #ffd700;
     transform: translateY(-10px);
 }
 h1,p
 {
-  color: #ffffff;
+  color: #E6E6E6;
 }
 header h1,p
 {
   text-align: center;
+}
+.Posters
+{
+  background-color: #0D0D0D;
+  border-top: none;
+  padding: 1.5%;
+}
+.Posters img
+{
+  width:20%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  border: 9px solid #ffd700;
 }
